@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Armotus">
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="fav/favicon.svg">
+	<title>Transcriptor Universal</title>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="main">
+	<h1 style="cursor:pointer" onclick="myTheme();">TRANSCRIPTOR UNIVERSAL</h1>
+	<p>Un simple transcriptor universal para lenguas con caracteres unicode.</p>
+	<br>
+	<form><textarea id="myInput" rows="12" cols="90" spellcheck="false" placeholder="Introducir un texto aquí y luego hacer clic en el botón 'Cambiar'" onmouseup="mySize();"></textarea></form>
+	<br>
+	<form><textarea id="myPrompt" rows="3" cols="90" spellcheck="false" placeholder=":,b:v,h:,ch:dd,ll:x, v: r, ... Introducir todas las instrucciones aquí" onmouseup="mySize2();"></textarea></form>
+	<br>
+	<button onclick="myChange();">Cambiar</button><span class="spanBreak1">&nbsp;</span><button onclick="myClear();">Limpiar</button><span class="spanBreak2">&nbsp;</span><button onclick="myAaTex();">A:a&nbsp;Tex</button>
+	<br><br>
+	<form><textarea id="myResult" rows="12" cols="90" spellcheck="false" placeholder="Pantalla en modo oscuro o claro : hacer clic en el 'Título'" onmouseup="mySize();"></textarea></form>
+	<br>
+	<div id="menu-A">
+	<button onclick="mySave();">Guardar</button><span class="spanBreak1">&nbsp;</span><button id="myCopx" onclick="myCopy();">Copiar</button><span class="spanBreak2">&nbsp;</span><button onclick="myPanel();">Panel</button>
+	</div>
+	<div id="menu-B">
+	<button onclick="myModo();">Área</button><span class="spanBreak1">&nbsp;</span><button onclick="myWeb();">Web</button><span class="spanBreak2">&nbsp;</span><button onclick="myPanel();">Atrás</button>
+	</div>
+	<br><br><br>
+	</div>
+	<script src="js/transcriptor.js"></script>
+	<script src="js/paneles.js"></script>
+</body>
+</html>
